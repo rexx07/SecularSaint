@@ -1,2 +1,2 @@
 # SecularSaint
-dressed in the moon, dripped on the sun.
+dressed on the moon, dripped on the sun.
