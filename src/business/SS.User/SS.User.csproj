@@ -5,5 +5,11 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+    
+    
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\core\SS.Infrastructure\SS.Infrastructure.csproj" />
+    </ItemGroup>
 
 </Project>

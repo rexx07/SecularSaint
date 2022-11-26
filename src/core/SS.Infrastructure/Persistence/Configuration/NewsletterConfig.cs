@@ -6,11 +6,10 @@ namespace SS.Infrastructure.Persistence.Configuration;
 
 public class NewsletterConfig: IEntityTypeConfiguration<Newsletter>
 {
-    string sql = "getDate()";
     public void Configure(EntityTypeBuilder<Newsletter> builder)
     {
         builder.ToTable("Newsletter");
         builder.HasKey(a => a.Id);
-        builder.Property(n => n.LastUpdatedOn).HasDefaultValueSql(sql);
+        builder.Property(n => n.LastUpdatedOn);
     }
 }
