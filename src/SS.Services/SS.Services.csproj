@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>SS.Services</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="7.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Identity.Web" Version="1.25.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SS.Application\SS.Application.csproj" />
+        <ProjectReference Include="..\SS.Domain\SS.Domain.csproj" />
+        <ProjectReference Include="..\SS.Infrastructure\SS.Infrastructure.csproj" />
+        <ProjectReference Include="..\SS.Shared\SS.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="User\Events" />
+      <Folder Include="User\Extensions" />
+    </ItemGroup>
+
+</Project>
